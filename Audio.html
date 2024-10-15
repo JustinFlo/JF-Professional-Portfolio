@@ -1,0 +1,64 @@
+<!doctype html>
+ <html lang="en"> 
+
+<head>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Template</title> 
+
+
+<link href="style1.css" rel="stylesheet" type="text/css" />
+
+</head> 
+
+<body> 
+
+<div class="container">
+    <div class="navbar">
+        <img src="logo.png" class="logo">
+        <ul>
+            <li><a href="index.html">Go Back?</a></li>
+        </uL>
+    </div>
+<div class="content">
+   <div class="left-col">
+   <h1>The<br> Real 
+    <br>Sounds...</h1>
+</div>
+    <div class="right-col">
+        <p>Click Here To Listen To The Project...</p>
+        <img src="play.png" id="icon">
+    </div>
+</div>
+
+<audio id="Stress">
+    <source src="Limbo.mp3" type="audio/mp3">
+</audio>
+
+<script>
+
+var stress = document.getElementById("Stress");
+var icon = document.getElementById("icon");
+
+icon.onclick = function(){
+    if(stress.paused){
+        stress.play();
+        icon.src = "pause.png";
+}   else{
+        stress.pause();
+        icon.src = "play.png";
+}
+}
+
+</script>
+
+
+</div>
+
+<script src="java.js"></script>
+
+</body> 
+
+</html>

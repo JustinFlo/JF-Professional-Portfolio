@@ -106,12 +106,12 @@ font-size: 20px;
 
     0%
     {
-        transform: perspective(1000px) rotateX(80deg) rotateY(99999deg);
+        transform: perspective(1000px) rotateX(80deg) rotateY(45deg);
     }
 
     100%
     {
-        transform: perspective(1000px) rotateX(360deg) rotateY(55090deg);
+        transform: perspective(1000px) rotateX(360deg) rotateY(0deg);
     }
     
 }
